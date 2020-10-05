@@ -2,10 +2,7 @@ package ru.netology.page;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
-import ru.netology.data.DataHelper;
-
 import static com.codeborne.selenide.Selenide.$;
-import static com.codeborne.selenide.Selenide.prompt;
 
 public class TransferPage {
     private SelenideElement amount = $("[data-test-id=amount] input");
@@ -13,7 +10,11 @@ public class TransferPage {
     private SelenideElement send = $("[data-test-id=action-transfer]");
     private String cardNumber;
     private int transferAmount;
+    private SelenideElement errorToast = $("[data-test-id=error-notification]");
 
+    public SelenideElement getErrorToast() {
+        return errorToast;
+    }
     public TransferPage(String cardNumber, int transferAmount){
         amount.shouldBe(Condition.visible);
         this.cardNumber = cardNumber;

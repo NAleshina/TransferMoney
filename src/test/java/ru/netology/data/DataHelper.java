@@ -25,38 +25,20 @@ public class DataHelper {
         return new VerificationCode("12345");
     }
 
-    public static String getFirstNumberCard(){
+    public static String getFirstNumberCard() {
         return "5559000000000001";
     }
-    public static String getSecondNumberCard(){
+
+    public static String getSecondNumberCard() {
         return "5559000000000002";
     }
 
-    public static int getAmount(){
+    public static int getAmount() {
         return 100;
     }
-    public static int getZero(){
+
+    public static int getZero() {
         return 0;
     }
-
-    private static int amountFirstCard = 10000;
-    private static int amountSecondCard = 10000;
-
-    public static int getAmountFirstCard() {
-        return amountFirstCard;
-    }
-
-    public static void setAmountFirstCard(int amountFirstCard) {
-        DataHelper.amountFirstCard = amountFirstCard;
-    }
-
-    public static int getAmountSecondCard() {
-        return amountSecondCard;
-    }
-
-    public static void setAmountSecondCard(int amountSecondCard) {
-        DataHelper.amountSecondCard = amountSecondCard;
-    }
-
 
 }
