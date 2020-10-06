@@ -12,8 +12,8 @@ public class TransferPage {
     private int transferAmount;
     private SelenideElement errorToast = $("[data-test-id=error-notification]");
 
-    public SelenideElement getErrorToast() {
-        return errorToast;
+    public void getErrorToast() {
+        errorToast.shouldBe(Condition.visible);
     }
     public TransferPage(String cardNumber, int transferAmount){
         amount.shouldBe(Condition.visible);

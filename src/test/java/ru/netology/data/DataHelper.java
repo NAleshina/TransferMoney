@@ -33,10 +33,6 @@ public class DataHelper {
         return "5559000000000002";
     }
 
-    public static int getAmount() {
-        return 100;
-    }
-
     public static int getZero() {
         return 0;
     }
